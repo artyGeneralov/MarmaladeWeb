@@ -127,6 +127,12 @@ position:absolute;
 	opacity:1;
 }
 
+#label_wrap div{
+	font:italic bold 13px georgia;
+	text-align:center;
+	line-height:25px;
+}
+
 .info_box{
 	display:flex;
 	flex-direction: column;
@@ -142,7 +148,7 @@ position:absolute;
 .info_box h2{
  
 	text-align:left;
-	font:bold 30px georgia;
+	font: bold 25px georgia;
 	color:var(--text_color_book_title);
 	width:100%;
 	padding:10px;
