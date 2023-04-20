@@ -48,8 +48,18 @@ for(let i = 0; i < btns.length; i++){
 		};
 }
 
-document.getElementById("top_image").addEventListener('click', function(){
+document.querySelector("#top_image").addEventListener('click', function(){
 		document.location.href = "about_author.html";
 	});
+	
+document.querySelector(".top_menu").querySelector("img").addEventListener('click', function(){
+		document.location.href = "https://www.reddit.com/r/PetMice/";
+	});
+	
+  document.querySelectorAll('.flashing_btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+    });
+  });
 
 
