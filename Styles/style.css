@@ -1,6 +1,8 @@
 :root{
 	--flash_duration:1s;
 	--flash_color:#e0dcc5;
+	--bg_color_topButtons:white;
+	--text_color_topButtons:black;
 	--bg_color_body:#DFDCB7;
 	--bg_color_top:#223355;
 	--bg_color_book_title:grey;
@@ -11,7 +13,6 @@
 	--bg_color_buttons_hover:teal;
 	--bg_color_buttons_active:blue;
 	--bg_color_label:#f3f2ed;
-	
 	--text_color_label:black;
 	
 }
@@ -20,6 +21,8 @@ body{
 }
 .top_menu{
 	position:fixed;
+	display:flex;
+	align-items:center;
 	background-color:var(--bg_color_top);
 	top:0%;
 	left:0%;
@@ -28,21 +31,33 @@ body{
 	z-index:5;
 }
 .top_menu>*{
-	display:inline-block;
+	
 }
 
 .top_menu img{
 	height:6em;
 	margin-left:2%;
 }
+.top_menu a{
+	text-decoration:none;
+	cursor:pointer;
+	background:var(--bg_color_topButtons);
+	color:var(--text_color_topButtons);
+	user-select:none;
+	border-radius:2px;
+	font-size:25px;
+	margin-left:4%;
+}
 
 /* Main background */
 .background_grid{
-position:absolute;
+	position:absolute;
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
 	grid-gap:0;
 	z-index:-1;
+	top:0;
+	left:0;
 	width:99%;
 	height:99%;
 	opacity:0.2;
@@ -63,7 +78,7 @@ position:absolute;
 /* flex-box layout */
 #content_wrap{
 	display:flex;
-	margin-top:150px;
+	margin-top:200px;
 	height:400px;
 }
 #left{
@@ -79,9 +94,8 @@ position:absolute;
 /* Image and label part*/
 .image_wrap{
 	position:relative;
-	width:400px;
-	height:400px;
-	margin-top:100px;
+	width:100%;
+	height:100%;
 }
 .image_wrap img{
 	position:absolute;
@@ -109,6 +123,7 @@ position:absolute;
 #top_image{
 	transition:opacity 0.8s;
 	z-index:3;
+	cursor:pointer;
 }
 #bottom_image{
 	transition:opacity 2s;
@@ -132,18 +147,24 @@ position:absolute;
 	text-align:center;
 	line-height:25px;
 }
-
-.info_box{
+#left{
 	display:flex;
-	flex-direction: column;
-	align-items:center;
+	flex:1;
+}
+#right{
+flex:2;
+	display:flex;
+	flex-direction:column;
+}
+.info_box{
+	
 	width:100%;
 	margin-right:10%;
 	height:400px;
 	border-radius:100px;
 }
 #txt{
-	flex:1;
+	
 	}
 .info_box h2{
  
@@ -168,10 +189,10 @@ position:absolute;
 	animation-duration:var(--flash_duration);
 }
 #info_box_btns{
-	flex:1;
+	
 }
 #info_box_btns a {
-	display:inline-block;
+	
 	text-decoration:none;
 	cursor:pointer;
 	background:var(--bg_color_buttons);

@@ -1,0 +1,23 @@
+#content_wrap{
+	flex-direction:row;
+	height:420px;
+}
+
+#content_wrap img{
+	flex:1;
+	margin-left:100px;
+	margin-right:80px;
+	height:420px;
+}
+
+#content_wrap p{
+	flex:4;
+	font-size:20px;
+	font-family:georgia;
+	line-height:30px;
+	border:1px solid black;
+	padding:10px;
+}
+#content_wrap div{
+	flex:1;
+	}
