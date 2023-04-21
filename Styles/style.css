@@ -1,6 +1,6 @@
 :root{
-	--flash_duration:1s;
-	--flash_color:#e0dcc5;
+	--flash_duration:0.3s;
+	--flash_color:#FFFEEB88;
 	--bg_color_topButtons:#ABCDEFAA;
 	--text_color_topButtons:black;
 	--bg_color_body:#DFDCB7;
@@ -162,10 +162,10 @@ body{
 	width:100%;
 	margin-right:10%;
 	height:600px;
-	border-radius:100px;
+	border-radius:50px;
 }
 #txt{
-	height:80%;
+	height:350px;
 	}
 .info_box h2{
  
@@ -177,7 +177,7 @@ body{
 }
 
 .info_box span{
-	width:100%;
+	width:99%;
 	padding:10px;
 	display:block;
 	font: 20px fantasy;
@@ -190,6 +190,7 @@ body{
 	animation-duration:var(--flash_duration);
 }
 #info_box_btns{
+	margin-top:30px;
 	height:60px;
 }
 #info_box_btns a {
@@ -199,11 +200,13 @@ body{
 	background:var(--bg_color_buttons);
 	color:var(--text_color_buttons);
 	user-select:none;
-	border-radius:2px;
-	margin-top:4em;
+	border-radius:4px;
+	margin-top:5em;
 	margin-right:20px;
 	font-size:25px;
+	padding:10px;
 	transition: background 0.1s linear;
+	
 }
 #info_box_btns a:first-child{
 	margin-left:10px;

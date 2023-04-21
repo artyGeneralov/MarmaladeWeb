@@ -13,39 +13,43 @@ let about_author = `<i>The author of \"The Incredible Journey of Marmalade the M
 					Their curiosity knows no bounds, and their ability to connect with 
 					children through enchanting tales has made them a beloved storyteller 
 					among both kids and adults alike.</i>`;
-let duration = 1000;
+let duration = 300;
 let btns = document.getElementsByClassName("flashing_btn");
 
 window.onload = (event) => {
   document.querySelector('#info_content').innerHTML = about_book;
 };
 
-
+let btnClicked = false;;
 for(let i = 0; i < btns.length; i++){
 	btns[i].onclick = () => {
-		event.preventDefault;
-		let curButton = btns[i].textContent;
-		console.log(curButton);
-		let curTxt;
-		switch(curButton){
-			case "About the Book":
-				curTxt = about_book;
-				break;
-			case "About the Author":
-				curTxt = about_author;
-				break;
-			default:
-				break;
-			}
+		if(!btnClicked){
+			btnClicked = true;
+			event.preventDefault;
+			let curButton = btns[i].textContent;
+			console.log(curButton);
+			let curTxt;
+			switch(curButton){
+				case "About the Book":
+					curTxt = about_book;
+					break;
+				case "About the Author":
+					curTxt = about_author;
+					break;
+				default:
+					break;
+				}
 			console.log(curTxt);
 			document.querySelector('#info_content').innerHTML = curTxt;	
-			
-		var infoBox = btns[i].closest('#right').querySelector('.info_box');
-		infoBox.classList.add('flash');
-		setTimeout(function() {
-		infoBox.classList.remove('flash');
-		}, duration); // in millis
-		};
+				
+			let infoBox = btns[i].closest('#right').querySelector('.info_box');
+			infoBox.classList.add('flash');
+			setTimeout(function() {
+				btnClicked = false;
+			infoBox.classList.remove('flash');
+			}, duration); // in millis
+			};
+		}
 }
 
 document.querySelector("#top_image").addEventListener('click', function(){
