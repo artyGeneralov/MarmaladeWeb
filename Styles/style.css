@@ -1,7 +1,7 @@
 :root{
 	--flash_duration:1s;
 	--flash_color:#e0dcc5;
-	--bg_color_topButtons:white;
+	--bg_color_topButtons:#ABCDEFAA;
 	--text_color_topButtons:black;
 	--bg_color_body:#DFDCB7;
 	--bg_color_top:#223355;
@@ -180,7 +180,7 @@ body{
 	width:100%;
 	padding:10px;
 	display:block;
-	font: bold 20px fantasy;
+	font: 20px fantasy;
 	word-spacing:0.5em;
 	line-height:1.5;
 	color:var(--text_color_description);

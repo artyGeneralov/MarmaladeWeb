@@ -1,13 +1,13 @@
 /* flasher */
 let about_book = `<i>Join Marmalade, an adventurous little mouse, as she sets off
-					on a thrilling quest to find the ancient Mouse Kingdom\'s treasure. 
+					on a thrilling quest to find the ancient Mouse Kingdom\'s treasure.<br> 
 					Along the way, she befriends a wise owl, a brave hedgehog, 
-					and a clever fox. Together, they overcome obstacles, solve riddles, 
+					and a clever fox.<br> Together, they overcome obstacles, solve riddles, 
 					and learn the true power of friendship. 
-					Will Marmalade and her friends uncover the long-lost treasure? 
+					Will Marmalade and her friends uncover the long-lost treasure? <br>
 					Dive into this enchanting tale to find out!</i>`;
 let about_author = `<i>The author of \"The Incredible Journey of Marmalade the Mouse\" 
-					loves to weave delightful stories that spark the imagination of young readers. 
+					loves to weave delightful stories that spark the imagination of young readers.<br> 
 					With a unique knack for dreaming up whimsical adventures, 
 					the author draws upon a vast treasure trove of knowledge and creativity. 
 					Their curiosity knows no bounds, and their ability to connect with 
